@@ -2,11 +2,12 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 import path from 'path';
-import express from 'express';
+import express, { response } from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import reload from 'livereload';
 import connectReload from 'connect-livereload';
+import { request } from 'http';
 
 dotenv.config();
 
@@ -39,11 +40,13 @@ app.route('/api')
     console.log('data from fetch', json);
     res.json(json);
   })
+
   .post(async (req, res) => {
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
-    console.log('Now send something back to your client');
-    // res.json({data: dataToSendToFrontEnd});
+    res.json('hello world!');
+    // console.log('Now send something back to your client');
+    // res.json({message: 'hello world!'});
   });
 
 app.listen(port, async () => {

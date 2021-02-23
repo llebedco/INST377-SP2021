@@ -122,7 +122,6 @@ describe('Lab 4', () => {
     cy.get('form').should('have.attr', 'method', 'post');
     cy.get('form').should('have.attr', 'action', '/api');
     cy.get('button[type=submit]')
-<<<<<<< HEAD
       .click();
     cy.contains('hello world', { matchCase: false });
   });
@@ -135,11 +134,5 @@ describe('Lab 4', () => {
         .click();
       cy.contains('hello world', { matchCase: false });
     });
-=======
-      .click()
-      .then(() => {
-        cy.contains('hello world', { matchCase: false });
-      });
->>>>>>> 71de18f657cb88e0e18449b2b53406b61eada9c4
   });
 });

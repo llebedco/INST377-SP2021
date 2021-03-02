@@ -44,11 +44,10 @@ app.route('/api')
   .post(async (req, res) => {
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
-    res.json('hello world!');
-    // console.log('Now send something back to your client');
-    // res.json({message: 'hello world!'});
+    console.log('Now send something back to your client');
+    //res.json({message: 'hello world!'});
   });
-
+  
 app.listen(port, async () => {
   console.log(`Example app listening on port ${port}!`);
 });

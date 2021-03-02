@@ -8,7 +8,5 @@ app.route('/api')
   .post(async(req, res) => {
     console.log('POST request detected');
     console.log('From data in res.body', req.body);
-    res.json('Hello Word');
+    res.send('Hello Word');
   });
-
-  

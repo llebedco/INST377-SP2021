@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larisa Lebedco's Lab 5</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+   
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container column is-max-widescreen">
+      <div class="column info">
+          <div class="column">
+          </div>
+                <h1>Larisa Lebedco's Lab 5</h1>
+        <h2>Zip Code Food Search</h2>
+        <div class="block">
+          <form id="serch-form" action="", class="block form"></form>
+          <div class="reply-box block">
+            <form action="/api" method="post">
+              <button type="submit" id="submit" name ="">SUBMIT</button>
+          </form>
+            <ul class="target-list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <label>Search <input type="text" class="search" id="search"></label>
+    </div>
+      <div class="column">
+        <div class="box"><div id="mapid"></div>
+      </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
